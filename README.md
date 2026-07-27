@@ -1,136 +1,199 @@
-# 📱 Desafio Mobile - Banco Carrefour
+# 📱 Desafio Mobile — Banco Carrefour
 
-Projeto desenvolvido como desafio técnico de automação de testes Mobile utilizando **WebdriverIO**, **Appium** e **TypeScript**, seguindo boas práticas de organização, reutilização de código e arquitetura baseada em **Page Object Model (POM)**.
+Projeto desenvolvido como desafio técnico de automação de testes mobile utilizando **WebdriverIO**, **Appium** e **TypeScript**, seguindo boas práticas de organização, reutilização de código e arquitetura baseada em **Page Object Model (POM)**.
 
-O objetivo deste projeto é demonstrar conhecimentos em automação de aplicações Android, validação de interfaces, interação com elementos nativos e execução de gestos como Swipe e Drag & Drop.
+O objetivo do projeto é demonstrar conhecimentos em automação de aplicações Android, validação de interfaces, interação com elementos nativos, geração de evidências e execução de gestos como **Swipe** e **Drag & Drop**.
 
 ---
 
-# 🚀 Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
 - TypeScript
 - Node.js
 - WebdriverIO
 - Appium
+- Mocha
 - Android Studio
+- Android SDK
 - Android Emulator
-- Page Object Model (POM)
+- Allure Report
+- GitHub Actions
+- Page Object Model
 
 ---
 
-# 📂 Estrutura do Projeto
+## 📂 Estrutura do projeto
 
 ```text
 desafio-mobile-banco-carrefour
 │
+├── .github
+│   └── workflows
+│       └── ci.yml
+│
+├── apps
+│   └── wdio-native-demo-app.apk
+│
 ├── config
-│   └── wdio.conf.ts
+│   ├── wdio.conf.ts
+│   ├── wdio.shared.conf.ts
+│   └── wdio.android.conf.ts
 │
 ├── test
+│   ├── components
+│   ├── constants
+│   ├── data
+│   ├── helpers
 │   ├── pageobjects
-│   │   ├── BasePage.ts
-│   │   ├── home.page.ts
-│   │   ├── login.page.ts
-│   │   ├── signup.page.ts
-│   │   ├── forms.page.ts
-│   │   ├── swipe.page.ts
-│   │   └── drag.page.ts
-│   │
-│   └── specs
-│       ├── app-launch.spec.ts
-│       ├── login.spec.ts
-│       ├── signup.spec.ts
-│       ├── forms.spec.ts
-│       ├── swipe.spec.ts
-│       └── drag.spec.ts
+│   ├── specs
+│   └── utils
 │
+├── .gitignore
 ├── package.json
+├── package-lock.json
+├── tsconfig.json
 └── README.md
 ```
 
----
-
-# 📋 Cenários Automatizados
-
-## ✅ Launch App
-
-- Inicialização da aplicação
-- Validação da Home
+> O arquivo APK não é versionado no repositório por ultrapassar o limite de tamanho permitido pelo GitHub.
 
 ---
 
-## ✅ Login
+## 📋 Cenários automatizados
+
+### ✅ Inicialização da aplicação
+
+- Inicialização do aplicativo
+- Validação da tela inicial
+- Validação dos principais elementos da Home
+
+### ✅ Login
 
 - Validação dos campos
+- Preenchimento de usuário e senha
 - Login com credenciais válidas
+- Validação da resposta da aplicação
 
----
-
-## ✅ Sign Up
+### ✅ Cadastro
 
 - Validação dos campos
+- Preenchimento dos dados
 - Cadastro de novo usuário
+- Validação da mensagem apresentada
 
----
-
-## ✅ Forms
+### ✅ Formulários
 
 - Validação dos componentes
-- Preenchimento do campo texto
-- Interação com elementos da tela
+- Preenchimento do campo de texto
+- Interação com switch
+- Interação com dropdown
+- Validação dos valores exibidos
 
----
+### ✅ Swipe
 
-## ✅ Swipe
+- Navegação até a tela de Swipe
+- Execução do gesto
+- Validação dos elementos apresentados após o movimento
 
-- Navegação até a tela
-- Execução do gesto Swipe
-
----
-
-## ✅ Drag & Drop
+### ✅ Drag & Drop
 
 - Localização dos elementos
-- Drag & Drop utilizando Actions API
+- Execução do Drag & Drop
+- Utilização da Actions API
+- Validação do resultado da interação
 
 ---
 
-# 🏗 Arquitetura
+## 🧪 Cobertura dos testes
 
-O projeto foi desenvolvido utilizando o padrão **Page Object Model**, separando:
+O projeto possui atualmente:
+
+- **11 testes automatizados**
+- **6 suítes de teste**
+- Testes de interface
+- Testes de navegação
+- Validações de componentes
+- Gestos mobile
+- Capturas automáticas em caso de falha
+
+---
+
+## 🏗️ Arquitetura
+
+O projeto utiliza o padrão **Page Object Model**, separando:
 
 - Localizadores
 - Métodos de interação
-- Cenários de teste
+- Componentes reutilizáveis
+- Dados de teste
+- Helpers
+- Utilitários
+- Cenários automatizados
 
-Essa arquitetura facilita:
+Essa estrutura facilita:
 
 - manutenção;
 - reutilização;
 - legibilidade;
-- escalabilidade.
+- escalabilidade;
+- redução de código duplicado;
+- evolução do framework.
 
 ---
 
-# ⚙️ Pré-requisitos
+## ⚙️ Pré-requisitos
 
-Antes de executar o projeto é necessário possuir instalado:
+Antes de executar o projeto, é necessário possuir instalado:
 
-- Node.js
+- Node.js 20 ou superior
 - Java JDK
 - Android Studio
 - Android SDK
 - Appium
+- Appium UiAutomator2 Driver
 - Android Emulator
+
+Verifique as instalações:
+
+```bash
+node --version
+npm --version
+java --version
+appium --version
+```
+
+Instale o driver Android do Appium:
+
+```bash
+appium driver install uiautomator2
+```
 
 ---
 
-# 📦 Instalação
+## 📱 Configuração do aplicativo
+
+O APK utilizado nos testes deve ser colocado na pasta:
+
+```text
+apps/wdio-native-demo-app.apk
+```
+
+O arquivo não está incluído no GitHub devido ao limite de tamanho para arquivos individuais.
+
+A configuração do caminho do aplicativo está localizada nos arquivos da pasta:
+
+```text
+config/
+```
+
+---
+
+## 📦 Instalação
 
 Clone o projeto:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/desafio-mobile-banco-carrefour.git
+git clone https://github.com/jaquelineleite/desafio-mobile-banco-carrefour.git
 ```
 
 Acesse a pasta:
@@ -147,7 +210,14 @@ npm install
 
 ---
 
-# ▶️ Execução dos testes
+## ▶️ Execução dos testes
+
+Antes de executar:
+
+1. Abra o Android Studio.
+2. Inicie o emulador Android.
+3. Inicie o servidor Appium, caso ele não seja iniciado automaticamente pela configuração.
+4. Confirme que o APK está na pasta `apps`.
 
 Executar todos os testes:
 
@@ -155,37 +225,37 @@ Executar todos os testes:
 npm test
 ```
 
-Executar apenas Login:
+Executar somente Login:
 
 ```bash
 npm run test:login
 ```
 
-Executar apenas Cadastro:
+Executar somente Cadastro:
 
 ```bash
 npm run test:signup
 ```
 
-Executar apenas Forms:
+Executar somente Forms:
 
 ```bash
 npm run test:forms
 ```
 
-Executar apenas Swipe:
+Executar somente Swipe:
 
 ```bash
 npm run test:swipe
 ```
 
-Executar apenas Drag:
+Executar somente Drag & Drop:
 
 ```bash
 npm run test:drag
 ```
 
-Executar apenas Launch:
+Executar somente Launch:
 
 ```bash
 npm run test:launch
@@ -193,58 +263,136 @@ npm run test:launch
 
 ---
 
-# 📱 Funcionalidades Automatizadas
+## 📊 Allure Report
 
-✔ Login
+O projeto possui integração com **Allure Report**, incluindo:
 
-✔ Cadastro
+- Epic
+- Feature
+- Story
+- Severity
+- Owner
+- Informações do ambiente
+- Screenshots em caso de falha
 
-✔ Formulários
+Gerar o relatório:
 
-✔ Swipe
+```bash
+npm run allure:generate
+```
 
-✔ Drag & Drop
+Abrir o relatório gerado:
 
-✔ Navegação entre telas
+```bash
+npm run allure:open
+```
 
-✔ Validação de elementos
+Gerar e abrir o relatório:
 
-✔ Interação com componentes nativos
+```bash
+npm run report
+```
+
+Também é possível utilizar:
+
+```bash
+npm run allure:serve
+```
+
+### Informações do ambiente exibidas no relatório
+
+- Projeto: Banco Carrefour Mobile
+- Plataforma: Android
+- Versão do Android: 15
+- Dispositivo: Pixel 5 API 35
+- Automação: WebdriverIO
+- Driver: Appium
+- Linguagem: TypeScript
+- Framework: Mocha
 
 ---
 
-# 💡 Boas práticas utilizadas
+## 🔄 Integração contínua
+
+O projeto possui uma pipeline configurada com **GitHub Actions**.
+
+A pipeline é executada em:
+
+- Push para a branch `main`
+- Pull Request direcionado à branch `main`
+
+Durante a execução são realizadas as etapas:
+
+```bash
+npm ci
+npx tsc --noEmit
+```
+
+A validação garante que:
+
+- as dependências sejam instaladas corretamente;
+- o projeto TypeScript esteja compilando;
+- erros de tipagem sejam identificados antes da integração do código.
+
+> A execução completa dos testes mobile depende de emulador Android ou dispositivo conectado. Por isso, a pipeline atual realiza a validação estrutural e a compilação do projeto.
+
+---
+
+## 📱 Funcionalidades automatizadas
+
+- ✔ Inicialização da aplicação
+- ✔ Login
+- ✔ Cadastro
+- ✔ Formulários
+- ✔ Swipe
+- ✔ Drag & Drop
+- ✔ Navegação entre telas
+- ✔ Validação de elementos
+- ✔ Interação com componentes nativos
+- ✔ Evidências de falha
+- ✔ Relatório Allure
+
+---
+
+## 💡 Boas práticas utilizadas
 
 - Page Object Model
-- Reutilização de código
 - Classe BasePage
-- Métodos reutilizáveis
+- Componentes reutilizáveis
 - Separação entre páginas e cenários
-- Código em TypeScript
-- Estrutura escalável
+- Dados de teste externos
+- Helpers de navegação e gestos
+- Constantes centralizadas
+- Utilitários de ambiente e screenshots
+- Código desenvolvido em TypeScript
+- Relatórios com Allure
+- Validação contínua com GitHub Actions
+- Estrutura preparada para expansão
 
 ---
 
-# 📈 Melhorias futuras
+## 📈 Melhorias futuras
 
-- Integração com Allure Report
-- Execução em GitHub Actions
-- Captura automática de screenshots em falhas
-- Geração de relatórios HTML
-- Testes em dispositivos reais
-- Execução paralela
+- Execução dos testes em dispositivo físico
+- Execução em mais versões do Android
+- Execução em serviços de dispositivos na nuvem
+- Testes paralelos
+- Publicação automática do relatório Allure
+- Integração com ferramentas de gestão de testes
+- Criação de cenários para falhas de rede e interrupções
+- Inclusão de testes de acessibilidade mobile
 
 ---
 
-# 👩‍💻 Desenvolvido por
+## 👩‍💻 Desenvolvido por
 
 **Jaqueline Fernandes de Andrade**
 
-Analista de Qualidade (QA)
+Analista de Qualidade — QA
 
-Especialista em Testes Manuais e Automatizados
+Experiência com testes manuais, automatizados, APIs e integração contínua.
 
-Tecnologias:
+### Tecnologias
 
 - Cypress
 - Playwright
@@ -257,9 +405,9 @@ Tecnologias:
 - Postman
 - Azure DevOps
 - Git
+- GitHub Actions
 
-LinkedIn:
-https://www.linkedin.com/in/jaqueline-c0nnecta
+### Contatos
 
-GitHub:
-https://github.com/jaquelineleite
+- [LinkedIn](https://www.linkedin.com/in/jaqueline-c0nnecta)
+- [GitHub](https://github.com/jaquelineleite)

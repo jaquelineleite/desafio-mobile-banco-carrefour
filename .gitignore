@@ -1,0 +1,27 @@
+# Dependências
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Relatórios
+allure-report/
+allure-results/
+
+# Screenshots gerados durante execução
+screenshots/
+
+# Evidências temporárias
+evidencias/
+
+# VS Code
+.vscode/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.apk*.apk

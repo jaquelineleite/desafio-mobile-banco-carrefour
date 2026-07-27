@@ -1,5 +1,11 @@
 # 📱 Desafio Mobile — Banco Carrefour
 
+![TypeScript](...)
+![WebdriverIO](...)
+![Appium](...)
+![Android](...)
+![GitHub Actions](...)
+
 Projeto desenvolvido como desafio técnico de automação de testes mobile utilizando **WebdriverIO**, **Appium** e **TypeScript**, seguindo boas práticas de organização, reutilização de código e arquitetura baseada em **Page Object Model (POM)**.
 
 O objetivo do projeto é demonstrar conhecimentos em automação de aplicações Android, validação de interfaces, interação com elementos nativos, geração de evidências e execução de gestos como **Swipe** e **Drag & Drop**.

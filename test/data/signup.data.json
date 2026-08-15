@@ -1,0 +1,22 @@
+{
+  "valid": {
+    "email": "qa@teste.com",
+    "password": "12345678",
+    "confirmPassword": "12345678"
+  },
+  "invalidEmail": {
+    "email": "email-invalido",
+    "password": "12345678",
+    "confirmPassword": "12345678"
+  },
+  "shortPassword": {
+    "email": "qa@teste.com",
+    "password": "123",
+    "confirmPassword": "123"
+  },
+  "passwordMismatch": {
+    "email": "qa@teste.com",
+    "password": "12345678",
+    "confirmPassword": "87654321"
+  }
+}

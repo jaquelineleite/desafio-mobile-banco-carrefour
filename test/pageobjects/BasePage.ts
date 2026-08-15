@@ -45,4 +45,8 @@ export default class BasePage {
         await this.esperarElementoVisivel(elemento);
         return elemento.getText();
     }
+    elementoPorTexto(texto: string) {
+        return $(`//*[@text="${texto}" or @label="${texto}" or @name="${texto}"]`);
+    }
+
 }

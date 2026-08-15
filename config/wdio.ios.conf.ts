@@ -6,22 +6,23 @@ export const config: WebdriverIO.Config = {
 
     capabilities: [
         {
-            platformName: 'Android',
+            platformName: 'iOS',
 
-            'appium:automationName': 'UiAutomator2',
-            'appium:deviceName': 'Pixel 5 API 35',
-            'appium:udid': 'emulator-5554',
-            'appium:platformVersion': '15',
+            'appium:automationName': 'XCUITest',
+            'appium:deviceName':
+                process.env.IOS_DEVICE_NAME ?? 'iPhone 15',
+            'appium:platformVersion':
+                process.env.IOS_PLATFORM_VERSION ?? '17.5',
 
             'appium:app':
-                process.env.ANDROID_APP_PATH ??
+                process.env.IOS_APP_PATH ??
                 path.resolve(
                     process.cwd(),
                     'apps',
-                    'wdio-native-demo-app.apk',
+                    'wdio-native-demo-app.app',
                 ),
 
-            'appium:autoGrantPermissions': true,
+            'appium:autoAcceptAlerts': true,
             'appium:noReset': false,
             'appium:fullReset': false,
             'appium:newCommandTimeout': 240,

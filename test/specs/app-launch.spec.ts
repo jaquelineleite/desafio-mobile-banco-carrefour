@@ -1,4 +1,5 @@
 import HomePage from '../pageobjects/home.page.js';
+import { expect as chaiExpect } from 'chai';
 
 import {
     addEpic,
@@ -18,7 +19,7 @@ describe('Inicialização do aplicativo', () => {
 
         const packageName = await driver.getCurrentPackage();
 
-        expect(packageName).toBe('com.wdiodemoapp');
+        chaiExpect(packageName).to.equal('com.wdiodemoapp');
 
         await expect(HomePage.abaHome).toBeDisplayed();
         await expect(HomePage.abaLogin).toBeDisplayed();

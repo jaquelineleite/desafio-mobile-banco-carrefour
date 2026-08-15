@@ -1,0 +1,18 @@
+stages:
+  - validate
+
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+
+cache:
+  key: "$CI_COMMIT_REF_SLUG"
+  paths:
+    - .npm/
+
+validate-typescript:
+  stage: validate
+  image: node:20-bookworm
+
+  script:
+    - npm ci
+    - npx tsc --noEmit

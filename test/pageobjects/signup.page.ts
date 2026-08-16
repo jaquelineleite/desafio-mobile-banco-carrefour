@@ -14,7 +14,7 @@ class SignupPage extends BasePage {
     }
 
     get abaSignUp() {
-        return $("~sign-up-container");
+        return $("~button-sign-up-container");
     }
 
     async acessarCadastro(): Promise<void> {

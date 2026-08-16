@@ -11,7 +11,7 @@ import {
 
 describe('Inicialização do aplicativo', () => {
     it('deve abrir o aplicativo e exibir o menu principal', async () => {
-        addEpic('Desafio Mobile - Banco Carrefour');
+        addEpic('QA Mobile Automation - WebdriverIO & Appium');
         addFeature('Inicialização');
         addStory('Abertura da aplicação');
         addSeverity('blocker');

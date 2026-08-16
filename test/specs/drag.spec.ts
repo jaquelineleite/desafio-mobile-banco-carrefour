@@ -15,7 +15,7 @@ describe('Drag & Drop', () => {
     });
 
     it('deve abrir a tela Drag', async () => {
-        addEpic('Desafio Mobile - Banco Carrefour');
+        addEpic('QA Mobile Automation - WebdriverIO & Appium');
         addFeature('Gestos Mobile');
         addStory('Abertura da tela Drag');
         addSeverity('normal');
@@ -25,7 +25,7 @@ describe('Drag & Drop', () => {
     });
 
     it('deve arrastar o primeiro elemento para o destino', async () => {
-        addEpic('Desafio Mobile - Banco Carrefour');
+        addEpic('QA Mobile Automation - WebdriverIO & Appium');
         addFeature('Gestos Mobile');
         addStory('Interação utilizando Drag and Drop');
         addSeverity('normal');

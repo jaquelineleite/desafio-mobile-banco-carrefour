@@ -15,7 +15,7 @@ describe('Swipe', () => {
     });
 
     it('deve abrir a tela Swipe', async () => {
-        addEpic('Desafio Mobile - Banco Carrefour');
+        addEpic('QA Mobile Automation - WebdriverIO & Appium');
         addFeature('Gestos Mobile');
         addStory('Abertura da tela Swipe');
         addSeverity('normal');
@@ -25,7 +25,7 @@ describe('Swipe', () => {
     });
 
     it('deve realizar swipe para esquerda', async () => {
-        addEpic('Desafio Mobile - Banco Carrefour');
+        addEpic('QA Mobile Automation - WebdriverIO & Appium');
         addFeature('Gestos Mobile');
         addStory('Navegação utilizando Swipe');
         addSeverity('normal');

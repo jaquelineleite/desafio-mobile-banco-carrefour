@@ -1,4 +1,4 @@
-# 📱 Desafio de Automação Mobile — Banco Carrefour
+# 📱 QA Mobile Automation — WebdriverIO & Appium
 
 [![GitHub Actions](https://github.com/jaquelineleite/desafio-mobile-banco-carrefour/actions/workflows/ci.yml/badge.svg)](https://github.com/jaquelineleite/desafio-mobile-banco-carrefour/actions/workflows/ci.yml)
 [![GitLab Pipeline](https://gitlab.com/jaquelinefdeandrade/desafio-mobile-banco-carrefour/badges/main/pipeline.svg)](https://gitlab.com/jaquelinefdeandrade/desafio-mobile-banco-carrefour/-/pipelines)

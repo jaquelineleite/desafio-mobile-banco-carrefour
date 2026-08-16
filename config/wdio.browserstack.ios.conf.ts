@@ -38,7 +38,7 @@ export const config: WebdriverIO.Config = {
                 platformVersion:
                     process.env.BROWSERSTACK_IOS_VERSION ??
                     '17',
-                projectName: 'Desafio Mobile - Banco Carrefour',
+                projectName: 'QA Mobile Automation - WebdriverIO & Appium',
                 buildName:
                     process.env.CI_PIPELINE_ID
                         ? `GitLab CI - iOS - ${process.env.CI_PIPELINE_ID}`

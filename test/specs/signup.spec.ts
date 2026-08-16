@@ -37,7 +37,7 @@ describe('Sign Up', () => {
     });
 
     it('deve exibir os campos da tela de cadastro', async () => {
-        addEpic('Desafio Mobile - Banco Carrefour');
+        addEpic('QA Mobile Automation - WebdriverIO & Appium');
         addFeature('Cadastro');
         addStory('Exibição da tela de cadastro');
         addSeverity('normal');
@@ -51,7 +51,7 @@ describe('Sign Up', () => {
 
     for (const scenario of invalidSignupScenarios) {
         it(`deve exibir mensagem de erro para ${scenario.name}`, async () => {
-            addEpic('Desafio Mobile - Banco Carrefour');
+            addEpic('QA Mobile Automation - WebdriverIO & Appium');
             addFeature('Cadastro');
             addStory(`Validação de ${scenario.name}`);
             addSeverity('normal');
@@ -72,7 +72,7 @@ describe('Sign Up', () => {
     }
 
     it('deve preencher o formulário de cadastro com dados válidos', async () => {
-        addEpic('Desafio Mobile - Banco Carrefour');
+        addEpic('QA Mobile Automation - WebdriverIO & Appium');
         addFeature('Cadastro');
         addStory('Cadastro de novo usuário');
         addSeverity('critical');

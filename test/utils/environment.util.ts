@@ -12,7 +12,7 @@ export function gerarInformacoesAmbiente(): void {
     });
 
     const environmentProperties = [
-        'Projeto=Desafio Mobile - Banco Carrefour',
+        'Projeto=QA Mobile Automation - WebdriverIO & Appium',
         'Automacao=WebdriverIO',
         'Driver=Appium',
         'Linguagem=TypeScript',

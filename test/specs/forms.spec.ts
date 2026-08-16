@@ -15,7 +15,7 @@ describe('Forms', () => {
     });
 
     it('deve exibir os elementos da tela de formulário', async () => {
-        addEpic('Desafio Mobile - Banco Carrefour');
+        addEpic('QA Mobile Automation - WebdriverIO & Appium');
         addFeature('Formulários');
         addStory('Exibição dos componentes do formulário');
         addSeverity('normal');
@@ -28,7 +28,7 @@ describe('Forms', () => {
     });
 
     it('deve preencher o campo de texto', async () => {
-        addEpic('Desafio Mobile - Banco Carrefour');
+        addEpic('QA Mobile Automation - WebdriverIO & Appium');
         addFeature('Formulários');
         addStory('Preenchimento do campo de texto');
         addSeverity('normal');

@@ -17,9 +17,10 @@ describe('Inicialização do aplicativo', () => {
         addSeverity('blocker');
         addOwner('Jaqueline Fernandes de Andrade');
 
-        const packageName = await driver.getCurrentPackage();
+        const menuPrincipalVisivel =
+            await HomePage.menuPrincipalEstaVisivel();
 
-        chaiExpect(packageName).to.equal('com.wdiodemoapp');
+        chaiExpect(menuPrincipalVisivel).to.equal(true);
 
         await expect(HomePage.abaHome).toBeDisplayed();
         await expect(HomePage.abaLogin).toBeDisplayed();

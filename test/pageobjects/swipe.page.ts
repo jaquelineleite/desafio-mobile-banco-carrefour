@@ -26,7 +26,6 @@ class SwipePage extends BasePage {
             }
         ]);
 
-        await browser.releaseActions();
     }
 }
 

@@ -76,7 +76,6 @@ class DragPage extends BasePage {
             }
         ]);
 
-        await browser.releaseActions();
     }
 }
 

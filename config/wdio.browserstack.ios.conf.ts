@@ -38,11 +38,11 @@ export const config: WebdriverIO.Config = {
                 platformVersion:
                     process.env.BROWSERSTACK_IOS_VERSION ??
                     '17',
-                projectName: 'Banco Carrefour Mobile',
+                projectName: 'Desafio Mobile - Banco Carrefour',
                 buildName:
                     process.env.CI_PIPELINE_ID
-                        ? `GitLab-${process.env.CI_PIPELINE_ID}`
-                        : 'Execucao Local BrowserStack',
+                        ? `GitLab CI - iOS - ${process.env.CI_PIPELINE_ID}`
+                        : 'BrowserStack Local - iOS',
                 debug: true,
                 networkLogs: true,
             },

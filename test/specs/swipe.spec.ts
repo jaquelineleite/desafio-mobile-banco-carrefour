@@ -15,7 +15,7 @@ describe('Swipe', () => {
     });
 
     it('deve abrir a tela Swipe', async () => {
-        addEpic('Banco Carrefour Mobile');
+        addEpic('Desafio Mobile - Banco Carrefour');
         addFeature('Gestos Mobile');
         addStory('Abertura da tela Swipe');
         addSeverity('normal');
@@ -25,7 +25,7 @@ describe('Swipe', () => {
     });
 
     it('deve realizar swipe para esquerda', async () => {
-        addEpic('Banco Carrefour Mobile');
+        addEpic('Desafio Mobile - Banco Carrefour');
         addFeature('Gestos Mobile');
         addStory('Navegação utilizando Swipe');
         addSeverity('normal');

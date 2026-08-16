@@ -30,7 +30,7 @@ describe('Login', () => {
     });
 
     it('deve exibir os campos da tela de login', async () => {
-        addEpic('Banco Carrefour Mobile');
+        addEpic('Desafio Mobile - Banco Carrefour');
         addFeature('Login');
         addStory('Exibição dos campos de autenticação');
         addSeverity('normal');
@@ -43,7 +43,7 @@ describe('Login', () => {
 
     for (const scenario of invalidLoginScenarios) {
         it(`deve exibir mensagem de erro para ${scenario.name}`, async () => {
-            addEpic('Banco Carrefour Mobile');
+            addEpic('Desafio Mobile - Banco Carrefour');
             addFeature('Login');
             addStory(`Validação de ${scenario.name}`);
             addSeverity('normal');
@@ -63,7 +63,7 @@ describe('Login', () => {
     }
 
     it('deve preencher e enviar o formulário de login com dados válidos', async () => {
-        addEpic('Banco Carrefour Mobile');
+        addEpic('Desafio Mobile - Banco Carrefour');
         addFeature('Login');
         addStory('Autenticação do usuário');
         addSeverity('critical');

@@ -15,7 +15,7 @@ describe('Forms', () => {
     });
 
     it('deve exibir os elementos da tela de formulário', async () => {
-        addEpic('Banco Carrefour Mobile');
+        addEpic('Desafio Mobile - Banco Carrefour');
         addFeature('Formulários');
         addStory('Exibição dos componentes do formulário');
         addSeverity('normal');
@@ -28,7 +28,7 @@ describe('Forms', () => {
     });
 
     it('deve preencher o campo de texto', async () => {
-        addEpic('Banco Carrefour Mobile');
+        addEpic('Desafio Mobile - Banco Carrefour');
         addFeature('Formulários');
         addStory('Preenchimento do campo de texto');
         addSeverity('normal');

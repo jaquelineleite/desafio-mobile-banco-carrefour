@@ -1,7 +1,7 @@
 # 📱 QA Mobile Automation — WebdriverIO & Appium
 
-[![GitHub Actions](https://github.com/jaquelineleite/desafio-mobile-banco-carrefour/actions/workflows/ci.yml/badge.svg)](https://github.com/jaquelineleite/desafio-mobile-banco-carrefour/actions/workflows/ci.yml)
-[![GitLab Pipeline](https://gitlab.com/jaquelinefdeandrade/desafio-mobile-banco-carrefour/badges/main/pipeline.svg)](https://gitlab.com/jaquelinefdeandrade/desafio-mobile-banco-carrefour/-/pipelines)
+[![GitHub Actions](https://github.com/jaquelineleite/qa-mobile-automation-webdriverio-appium/actions/workflows/ci.yml/badge.svg)](https://github.com/jaquelineleite/qa-mobile-automation-webdriverio-appium/actions/workflows/ci.yml)
+[![GitLab Pipeline](https://gitlab.com/jaquelinefdeandrade/qa-mobile-automation-webdriverio-appium/badges/main/pipeline.svg)](https://gitlab.com/jaquelinefdeandrade/qa-mobile-automation-webdriverio-appium/-/pipelines)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Automation-blue)
 ![WebdriverIO](https://img.shields.io/badge/WebdriverIO-v9-brightgreen)
 ![Appium](https://img.shields.io/badge/Appium-Mobile-purple)
@@ -76,7 +76,7 @@ Success rate: 100%
 ## 📂 Estrutura do projeto
 
 ```text
-desafio-mobile-banco-carrefour
+qa-mobile-automation-webdriverio-appium
 │
 ├── .github/
 │   └── workflows/
@@ -599,13 +599,13 @@ Para execução local em iOS também são necessários:
 Clone o repositório:
 
 ```bash
-git clone https://github.com/jaquelineleite/desafio-mobile-banco-carrefour.git
+git clone https://github.com/jaquelineleite/qa-mobile-automation-webdriverio-appium.git
 ```
 
 Acesse a pasta:
 
 ```bash
-cd desafio-mobile-banco-carrefour
+cd qa-mobile-automation-webdriverio-appium
 ```
 
 Instale as dependências conforme o lock file:
@@ -715,8 +715,8 @@ npm run typecheck
 
 ## 🔗 Repositórios
 
-- GitHub: https://github.com/jaquelineleite/desafio-mobile-banco-carrefour
-- GitLab: https://gitlab.com/jaquelinefdeandrade/desafio-mobile-banco-carrefour
+- GitHub: https://github.com/jaquelineleite/qa-mobile-automation-webdriverio-appium
+- GitLab: https://gitlab.com/jaquelinefdeandrade/qa-mobile-automation-webdriverio-appium
 
 ---
 

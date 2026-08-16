@@ -1,5 +1,5 @@
 {
-  "name": "desafio-mobile-banco-carrefour",
+  "name": "qa-mobile-automation-webdriverio-appium",
   "version": "1.0.0",
   "description": "Framework de automação mobile com WebdriverIO, Appium e TypeScript",
   "main": "index.js",

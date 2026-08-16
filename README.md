@@ -406,6 +406,8 @@ São registrados eventos como início da execução, sessão, cenários aprovado
 
 O projeto possui integração com **Allure Report** e gera resultados em:
 
+O relatório também recebe screenshots e logs de console gerados durante a execução, facilitando a investigação de falhas.
+
 ```text
 allure-results/
 ```

@@ -50,6 +50,7 @@ export const sharedConfig: WebdriverIO.Config = {
                 outputDir: 'allure-results',
                 disableWebdriverStepsReporting: true,
                 disableWebdriverScreenshotsReporting: false,
+                addConsoleLogs: true,
             },
         ],
     ],

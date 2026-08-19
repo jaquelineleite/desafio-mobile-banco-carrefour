@@ -62,7 +62,7 @@ describe('Login', () => {
         });
     }
 
-    it('deve preencher e enviar o formulário de login com dados válidos', async () => {
+    it('deve submeter o formulário de login com dados válidos', async () => {
         addEpic('QA Mobile Automation - WebdriverIO & Appium');
         addFeature('Login');
         addStory('Autenticação do usuário');
